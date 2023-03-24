@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css') }}">
+    <title>Registrase</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="register">
+                <form action="{{url_for('guardar')}}" method="post">
+                    <input required type="text" class="input" placeholder="nombre" name="nombre" id="nombre">
+                    <br>
+                    <input required type="text" class="input" placeholder="apellido" name="apellido" id="apellido">
+                    <br>
+                    <input required type="text" class="input" placeholder="telefono" name="telefono" id="telefono">
+                    <br>
+                    <input required type="password" class="input" placeholder="contraseña" name="contraseña" id="contraseña">
+                    <br>
+                    <input required type="email" class="input" placeholder="correo" name="correo" id="correo">
+                    <br>
+                    <button type="submit" class="boton">GUARDAR</button>
+                    <button class="boton">
+                        <a href="{{url_for('PedirCita')}}" class="volver">REGRESAR</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

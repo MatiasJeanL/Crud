@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/CRUD.css') }}">
+    <title>DATOS</title>
+</head>
+<body>
+    
+    <a href = "index.html">Inicio</a>
+
+    <section class="box-container">
+        <div class="box">
+            <h3>PACIENTES</h3>
+            <br><br>
+            <a href="{{url_for('formulario_agregar_dato')}}" class="age">Agregar</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>FOLIO</th>
+                        <th>NOMBRE(S)</th>
+                        <th>APELLIDOS</th>
+                        <th>EDAD</th>
+                        <th>LUGAR</th>
+                        <th>Telefono</th>
+                        <th>DIRECCION</th>
+                        <th>CORREO</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                        <th>PDF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for dato in datos %}
+                    <tr>
+                        <td>{{dato[0]}}</td>
+                        <td>{{dato[1]}}</td>
+                        <td>{{dato[2]}}</td>
+                        <td>{{dato[3]}}</td>
+                        <td>{{dato[4]}}</td>
+                        <td>{{dato[5]}}</td>
+                        <td>{{dato[6]}}</td>
+                        <td>{{dato[7]}}</td>
+                        <td>
+                            {# Pasar el id (lo que hay en dato[0] #}
+                            <button><a href="{{url_for('editar_dato', id=dato[0])}}">Editar</a></button>
+                        </td>
+                        <td>
+                            <form action="{{url_for('eliminar_datos')}}" method="POST">
+                                <input type="hidden" name="id" value="{{dato[0]}}">
+                                <button>Eliminar</button>
+                            </form>
+                        </td>
+                        <td>
+                            {# Pasar el id (lo que hay en dato[0] #}
+                            <button><a href="{{url_for('pdf', id=dato[0])}}">PDF</a></button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
+
+
+
+
+
+  
+

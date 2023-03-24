@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica médica</title>
+</head>
+<body>
+    <div id="encabezado">
+        <div id="menú">
+            <ul>
+                <li><a href="index.html" title="Página principal">INICIO</a></li>
+                <li><a href="registrar_pacientes.html" title="PACIENTES">PACIENTES</a></li>
+                <li><a href="servicios.html" title="Servicios médicos">SERVICIOS</a></li>
+                <li><a href="quienes_somos.html" title="Sobre nosotros">NOSOTROS</a></li>
+                <li><a href="contactanos.html" title="Nuestros datos">CONTÁCTANOS</a></li>
+                <li><a href="pedir_cita.html" title="Citas">SOLICITAR CITA</a></li>
+                {{nombre}}
+            </ul> 
+        </div>
+    </div>
+    <table>
+        <tr>
+          <th>TORRE DE ESPECIALIDADES</th>
+          <th>AMBULANCIA 24H</th>
+          <th>UNIDAD DE URGENCIAS</th>
+        </tr>
+        <tr>
+            <td><img src="../static/img/torre.png" width="30%" height="20%"></td>
+            <td><img src="../static/img/ambulancia.png" width="30%" height="20%"></td>
+            <td><img src="../static/img/unidad.png" width="30%" height="20%"></td>
+        </tr>
+        <tr>
+            <th><p>Con personal altamente capacitado para brindarte la mejor atención</p></th>
+            <th><p>Servicio de Ambulancia las 24 horas. Traslados Locales y Nacionales.</p></th>
+            <th><p>Unidad de atención de urgencias disponible las 24 horas</p></th>
+          </tr>
+    </table>
+    <div id="imagen">
+        <img src="../static/img/inicio.png" width="100%" height="500px">
+    </div>
+</body>
+</html>

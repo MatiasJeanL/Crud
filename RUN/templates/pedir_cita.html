@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css') }}">
+    <title>Clinica médica</title>
+</head>
+<body>
+    <div id="encabezado">
+        <div id="menú">
+            <ul>
+                <li><a href="index.html" title="Página principal">INICIO</a></li>
+                <li><a href="registrar_pacientes.html" title="PACIENTES">PACIENTES</a></li>
+                <li><a href="servicios.html" title="Servicios médicos">SERVICIOS</a></li>
+                <li><a href="quienes_somos.html" title="Sobre nosotros">NOSOTROS</a></li>
+                <li><a href="contactanos.html" title="Nuestros datos">CONTÁCTANOS</a></li>
+                <li><a href="pedir_cita.html" title="Citas">SOLICITAR CITA</a></li>
+            </ul> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="login-container">
+          <div class="register">
+            <h2>Registrarse</h2>
+            <form action="">
+              <input type="text" placeholder="Nombre" class="nombre">
+              <input type="text" placeholder="Correo" class="correo">
+              <input type="password" placeholder="Contraseña" class="pass">
+              <input type="submit" class="submit" value="REGISTRARSE">
+            </form>
+          </div>
+        </div>
+      </div>
+   </body>
+   </html>

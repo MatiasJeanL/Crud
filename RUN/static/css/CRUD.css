@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(154, 245, 209);
+    text-align: center;
+}
+
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    bottom: 20rem;
+}
+
+td a{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    
+    position: static;
+    margin-top: 1.3rem;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2.5px solid rgb(0, 0, 0);
+  }
+  thead th:nth-child(0) {
+    width: 20%;
+  }
+  thead th:nth-child(1) {
+    width: 40%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 25%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 50%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  thead th:nth-child(5) {
+    width: 25%;
+  }
+  
+  thead th:nth-child(6) {
+    width: 35%;
+  }
+  thead th:nth-child(7) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(8) {
+    width: 20%;
+  }
+
+  thead th:nth-child(9) {
+    width: 20%;
+  }
+
+  th, td {
+    padding: 20px;
+  }
+
+  html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  }
+  
+  thead th, tbody td {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  th {
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    color:black;
+    border: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  td {
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  tbody td {
+    text-align: center;
+    border: #000000;
+  }
+  
+  thead th {
+    text-align: center;
+    border: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  thead, tbody {
+    color: rgb(0, 0, 0);
+  }
+
+
+  tbody tr:nth-child(odd) {
+    background-color: #fffffff6;
+    border: #000000;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #fffffff6;
+    border: #000000;
+  }
+  
+  table {
+    background-color: #ffffff00;
+  }
+
+  button{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.925);
+
+    height: 2rem;
+    font-size: .88rem;
+  }

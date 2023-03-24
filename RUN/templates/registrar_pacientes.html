@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica médica</title>
+</head>
+<body>
+    <div id="encabezado">
+        <div id="menú">
+            <ul>
+                <li><a href="index.html" title="Página principal">INICIO</a></li>
+                <li><a href="registrar_pacientes.html" title="PACIENTES">PACIENTES</a></li>
+                <li><a href="servicios.html" title="Servicios médicos">SERVICIOS</a></li>
+                <li><a href="quienes_somos.html" title="Sobre nosotros">NOSOTROS</a></li>
+                <li><a href="contactanos.html" title="Nuestros datos">CONTÁCTANOS</a></li>
+                <li><a href="pedir_cita.html" title="Citas">SOLICITAR CITA</a></li>
+                {{nombre}}
+            </ul> 
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="login-container">
+          <div class="register">
+            <h2>Registrarse</h2>
+            <form action="{{url_for('guardar_paciente')}}" method="post">
+                <input required type="text" class="input" placeholder="Nombres" name="Nombres" id="Nombres">
+                <br>
+                <input required type="text" class="input" placeholder="Apellidos" name="Apellidos" id="Apellidos">
+                <br>
+                <input required type="text"  placeholder="Edad" name="Edad" id="Edad">
+                <br>
+                <input required type="text" class="input" placeholder="Lugar" name="Lugar" id="Lugar">
+                <br>
+                <input required type="number" class="input" placeholder="Telefono" name="Telefono" id="Telefono">
+                <br>
+                <input required type="text" class="input" placeholder="direccion" name="direccion" id="direccion">
+                <br>
+                <input required type="email" class="input" placeholder="correo" name="correo" id="correo">
+                <br><br>
+                <button type="submit" class="boton">Guardar</button>
+                
+            </form>
+            <button class="boton">
+                <a href="{{url_for('datos')}}" >BASE DE DATOS</a>
+            </button>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

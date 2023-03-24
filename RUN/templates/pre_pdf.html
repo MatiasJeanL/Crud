@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css') }}">
+    <title>EDITAR</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-container">
+          <div class="register">
+            <form action="{{url_for('pdf_imprimir')}}" method="post">
+                {# Enviar el id en un campo oculto #}
+                <input type="hidden" name="id" value="{{dato[0]}}">
+                <br><br>
+                <input value="{{dato[1]}}" required type="text" class="input" placeholder="Nombres" name="Nombres" id="Nombres">
+                <input value="{{dato[2]}}" required type="text" class="input" placeholder="Apellidos" name="Apellidos" id="Apellidos">
+                <input value="{{dato[3]}}" required type="text" class="input" placeholder="Edad" name="Edad" id="Edad">
+                <input value="{{dato[4]}}" required type="text" class="input" placeholder="Lugar" name="Lugar" id="Lugar">
+                <input value="{{dato[5]}}" required type="text" class="input" placeholder="Telefono" name="Telefono" id="Telefono">
+                <input value="{{dato[6]}}" required type="text" class="input" placeholder="direccion" name="direccion" id="direccion">
+                <input value="{{dato[7]}}" required type="text" class="input" placeholder="correo" name="correo" id="correo">
+                <br><br>
+                <button type="submit" class="boton">Imprimir</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

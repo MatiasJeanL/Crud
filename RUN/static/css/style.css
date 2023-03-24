@@ -1,0 +1,182 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(154, 245, 209);
+}
+#menú{
+    position:relative;
+    height: 100%;
+    margin-bottom: 20px
+}
+
+ul{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(29, 32, 32, 0.829);
+    height: 100%;
+    text-align: center;
+    font-size:x-large;
+    font-family: fantasy;
+}
+li{
+    float:left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: solid;
+    height: 100%;
+    z-index: 100;
+    margin-bottom: 10px;
+}
+li a:hover{
+    background-color: rgb(230, 219, 219);
+    padding: 5px;
+}
+
+image{
+    display:flex;
+    justify-content:center;
+}
+
+p{
+    text-align:center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin: 2%;
+}
+tr, td{
+    text-align: center;
+    image-orientation: flip;
+    font-size:xx-large;
+    font-family:serif;
+}
+tr{
+    margin: 0%;
+    text-align: center;
+}
+
+table{
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0%;
+}
+
+h1{
+    text-align: center;
+    color:rgb(6, 71, 109);
+    font-family:monospace;
+    font-size:100px;
+}
+h3{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+th
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    text-align: justify;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .login-container{
+    display: flex;
+    width: 650px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+  }
+   
+  .register, .login{
+    flex: 1;
+  }
+   
+  .register{
+    padding: 40px;
+    position: relative;
+  }
+   
+  .register h2{
+    color: #797979;
+    margin-bottom: 30px;
+  }
+   
+  .register input{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #a8a8a8;
+    color: #333;
+  }
+   
+  .register input:active,
+  .register input:focus{
+    outline: none;
+  }
+   
+  .register .submit{
+    width: auto;
+    padding: 10px;
+    background: #f17108;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+  }
+   
+  .login{
+    background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+    padding: 40px;
+  }
+   
+  .login h2{
+    color: #fff;
+    margin-bottom: 45px;
+  }
+   
+  .login button i{
+    position: absolute;
+    top: 12px; 
+    left: 12px;
+  }
+   
+  .login button{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    position: relative;
+  }
+
+  @media only screen and (max-width: 540px){
+    .login-container{
+      display: block;
+    }
+   
+    .register, .login{
+      flex: none;
+    }
+  }
